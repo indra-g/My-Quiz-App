@@ -117,7 +117,7 @@ public class SportsActivity extends AppCompatActivity {
             String crct="Wrong! it's "+displayarr.get(correctanslocation1);
             Toast.makeText(this, crct, Toast.LENGTH_SHORT).show();
         }
-        if(que==1){
+        if(que==10){
             Intent intent=new Intent(SportsActivity.this,ScoreActivity.class);
             intent.putExtra("score",String.valueOf(score));
             startActivity(intent);
