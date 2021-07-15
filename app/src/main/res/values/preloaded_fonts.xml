@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aguafina_script</item>
+        <item>@font/anton</item>
+        <item>@font/audiowide</item>
+        <item>@font/baloo</item>
+        <item>@font/bungee_outline</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/dawning_of_a_new_day</item>
+        <item>@font/faster_one</item>
+        <item>@font/hanalei_fill</item>
+        <item>@font/lily_script_one</item>
+        <item>@font/megrim</item>
+    </array>
+</resources>

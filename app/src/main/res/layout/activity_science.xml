@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_start">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/view" />
+
+    <TextView
+        android:id="@+id/txt_que"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="Question 1/10"
+        android:textColor="@color/second"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt_que"
+        android:layout_alignStart="@+id/view"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_alignRight="@+id/view"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?"
+        android:textColor="@color/second"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/question1"
+        android:layout_alignEnd="@id/view"
+        android:layout_alignStart="@id/view"
+        android:layout_alignBottom="@id/view"
+        android:layout_alignRight="@id/view"
+        android:layout_alignLeft="@id/view">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_2"
+            android:layout_alignStart="@id/view"
+            android:layout_alignLeft="@id/view"
+            android:layout_alignEnd="@id/view"
+            android:layout_alignRight="@id/view"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/second"
+            android:fontFamily="@font/baloo"
+            android:onClick="chooseanswer"
+            android:tag="0"
+            android:text="Option 1"
+            android:textColor="#ECD662"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_3"
+            android:layout_alignStart="@id/view"
+            android:layout_alignLeft="@id/view"
+            android:layout_alignEnd="@id/view"
+            android:layout_alignRight="@id/view"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#ECD662"
+            android:backgroundTint="@color/second"
+            android:fontFamily="@font/baloo"
+            android:onClick="chooseanswer"
+            android:tag="1"
+            android:text="Option 2"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_4"
+            android:layout_alignStart="@id/view"
+            android:layout_alignLeft="@id/view"
+            android:layout_alignEnd="@id/view"
+            android:layout_alignRight="@id/view"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#ECD662"
+            android:backgroundTint="@color/second"
+            android:fontFamily="@font/baloo"
+            android:onClick="chooseanswer"
+            android:tag="2"
+            android:text="Option 3"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/view"
+            android:layout_alignLeft="@id/view"
+            android:layout_alignEnd="@id/view"
+            android:layout_alignRight="@id/view"
+            android:layout_alignBottom="@id/view"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#ECD662"
+            android:backgroundTint="@color/second"
+            android:fontFamily="@font/baloo"
+            android:onClick="chooseanswer"
+            android:tag="3"
+            android:text="Option 4"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</RelativeLayout>
