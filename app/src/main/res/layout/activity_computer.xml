@@ -16,6 +16,11 @@
         android:background="@drawable/view" />
 
     <TextView
+        android:layout_alignStart="@id/view"
+        android:layout_alignEnd="@id/view"
+        android:layout_alignLeft="@id/view"
+        android:layout_alignRight="@id/view"
+        android:gravity="center"
         android:id="@+id/txt_que"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
